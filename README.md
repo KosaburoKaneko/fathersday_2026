@@ -67,7 +67,10 @@ GitHub Pages では、キャンペーンごとにサブディレクトリを切�
 
 ```txt
 お中元LPの公開URL:
-https://kosaburokaneko.github.io/neo-fukuoka-promo-lp/ochugen_2026/
+https://lp.neo-fukuoka.jp/ochugen_2026/
+
+2026年 敬老の日LPの公開URL:
+https://lp.neo-fukuoka.jp/keirounohi_2026/
 ```
 
 公開成果物では、LP本体 `neo-fukuoka-promo-lp/` の中身を `dist/ochugen_2026/` にコピーします。
@@ -77,7 +80,18 @@ https://kosaburokaneko.github.io/neo-fukuoka-promo-lp/ochugen_2026/
 ```txt
 ochugen_2026/
 fathersday_2026/
+keirounohi_2026/
 ```
+
+2026年の敬老の日LPは、公開中のお中元LPを変更せず、独立した `keirounohi_2026/` で管理します。GitHub Pagesのデプロイ時に、両方のキャンペーンディレクトリを `dist/` へコピーします。
+
+過去LPのアーカイブ名は、既存の `archive/fathersday-2026/` に合わせて、小文字の英語名とハイフンを使用します。敬老の日LPの公開終了後の移動先は、以下を想定します。
+
+```txt
+archive/respect-for-the-aged-day-2026/
+```
+
+公開中はアーカイブへ移動しません。移動時はHTML・CSS・JavaScript・データ・画像をまとめて移し、相対パスを維持したうえで、GitHub Pagesの公開対象から `keirounohi_2026/` を外します。
 
 ## 推奨ディレクトリ構成
 

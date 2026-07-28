@@ -1,0 +1,89 @@
+{
+  "source": "https://store.neo-fukuoka.jp/",
+  "updatedAt": "2026-07-27",
+  "products": [
+    {
+      "id": "giftset",
+      "name": "〖ギフト用〗選べる3本ギフトセット（専用ボックス・食べ方カード付）",
+      "shortName": "ギフト用 選べる3本ギフトセット",
+      "url": "https://store.neo-fukuoka.jp/items/134228204",
+      "price": "¥3,216〜",
+      "content": "各種75g瓶 × 3本（選択式）",
+      "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/128d09bf58b069c8f0dd512fdbab2bba.png?imformat=generic",
+      "localImagePath": "assets/images/giftset.png",
+      "description": "ネオ柚子胡椒、激辛ネオ柚子胡椒、ごはんにかけるもつ鍋醤油味から好きな3本を選べる、専用ボックスと食べ方カード付きのギフトセットです。",
+      "recommendedFor": "敬老の日に相手の好みに合わせた味を贈りたい方",
+      "campaigns": ["keirounohi_2026", "gift"],
+      "ctaId": "product_card_giftset"
+    },
+    {
+      "id": "select3",
+      "name": "選べる3本セット",
+      "shortName": "選べる3本セット",
+      "url": "https://store.neo-fukuoka.jp/items/127705677",
+      "price": "¥2,916〜",
+      "content": "75g瓶 × 3本（選択式）",
+      "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/c2d2beba70d70d0d1a9b8f17e9920f47.jpg?imformat=generic",
+      "localImagePath": "assets/images/select3.jpg",
+      "description": "好きな味を3本組み合わせられるセット。相手の好みや食べ方に合わせて選びやすい商品です。",
+      "recommendedFor": "味を組み合わせて贈りたい方",
+      "campaigns": ["keirounohi_2026", "repeat_purchase", "gift"]
+    },
+    {
+      "id": "neo",
+      "name": "ネオ柚子胡椒3本セット",
+      "shortName": "ネオ柚子胡椒3本セット",
+      "url": "https://store.neo-fukuoka.jp/items/98718140",
+      "price": "¥2,916",
+      "content": "75g瓶 × 3本",
+      "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/85b38bb9aa09cc6399ad5ac405ab2d8e.png?imformat=generic",
+      "localImagePath": "assets/images/neo-yuzu-gosho-3set.png",
+      "description": "香りとピリ辛を楽しめる、ネオフクオカの定番商品。そうめん、焼き鳥、唐揚げ、冷奴などに合わせやすい商品です。",
+      "recommendedFor": "毎日の料理に合わせやすい定番の味を贈りたい方",
+      "campaigns": ["keirounohi_2026", "repeat_purchase"],
+      "ctaId": "product_card_neo"
+    },
+    {
+      "id": "spicy",
+      "name": "激辛ネオ柚子胡椒3本セット",
+      "shortName": "激辛ネオ柚子胡椒3本セット",
+      "url": "https://store.neo-fukuoka.jp/items/98720788",
+      "price": "¥2,916",
+      "content": "75g瓶 × 3本",
+      "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/8e3ae579c0a8a83717a476a71b85e296.png?imformat=generic",
+      "localImagePath": "assets/images/spicy-neo-yuzu-gosho-3set.png",
+      "description": "ピザ、トマト系パスタ、カレーなど、しっかりした辛みを足したい料理に合わせやすい商品です。",
+      "recommendedFor": "辛いものが好きな方へ贈りたい方",
+      "campaigns": ["keirounohi_2026", "spicy_food", "repeat_purchase"],
+      "ctaId": "product_card_spicy"
+    },
+    {
+      "id": "motsunabe",
+      "name": "ごはんにかけるもつ鍋醤油味 3本セット",
+      "shortName": "ごはんにかけるもつ鍋醤油味 3本セット",
+      "url": "https://store.neo-fukuoka.jp/items/127368788",
+      "price": "¥2,970",
+      "content": "75g瓶 × 3本",
+      "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/ea20146c918da213b50cf71c8df079f5.png?imformat=generic",
+      "localImagePath": "assets/images/motsunabe-shoyu-3set.png",
+      "description": "もつ鍋醤油味の旨みをごはんやおつまみに合わせて楽しめる。白ごはん、卵かけごはん、豆腐、アボカド、ゆで卵にも合わせやすい商品です。",
+      "recommendedFor": "ごはんや冷奴に合わせやすい味を贈りたい方",
+      "campaigns": ["keirounohi_2026", "repeat_purchase"],
+      "ctaId": "product_card_motsunabe"
+    }
+  ],
+  "supportImages": [
+    {
+      "id": "giftbox-detail",
+      "label": "ギフトボックス付きセットの詳細画像",
+      "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/a4b15f2984999a903c0c6981aad276dd.png?imformat=generic",
+      "localImagePath": "assets/images/giftbox-detail.jpg"
+    },
+    {
+      "id": "motsunabe-scene",
+      "label": "ごはんにかけるもつ鍋醤油味の利用シーン画像",
+      "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/0a1be26508bba70544ec7eb5c31118aa.png?imformat=generic",
+      "localImagePath": "assets/images/motsunabe-scene.png"
+    }
+  ]
+}
