@@ -68,7 +68,6 @@ for (const [, destination] of ctaLinks) {
 
 assert(campaign?.campaign_name === "keirounohi_2026", "campaign_nameが正しくありません");
 assert(campaign?.utm_campaign === "keirounohi_2026", "utm_campaignが正しくありません");
-assert(JSON.stringify(campaign?.h1_lines) === JSON.stringify(["いつまでも", "元気でいてほしい人へ"]), "ファーストビュー見出しの改行位置が正しくありません");
 assert(campaign?.event_date === "2026-09-21", "敬老の日の日付が正しくありません");
 assert(campaign?.order_deadline === "2026-09-17T23:59:59+09:00", "注文期限の目安が正しくありません");
 assert(Array.isArray(products?.products) && products.products.length >= 4, "商品データが不足しています");
@@ -77,13 +76,19 @@ assert(products?.products?.every((product) => product.campaigns?.includes("keiro
 assert(html.includes('rel="canonical" href="https://lp.neo-fukuoka.jp/keirounohi_2026/"'), "canonical URLが正しくありません");
 assert(html.includes('property="og:image"'), "OGP画像が設定されていません");
 assert(html.includes('name="twitter:card"'), "Twitter Cardが設定されていません");
+assert(html.includes('<span class="eyebrow">敬老の日</span>'), "ファーストビューのキャンペーンラベルが正しくありません");
+assert(html.includes('<time class="hero-date" datetime="2026-09-21"'), "ファーストビューに敬老の日の日付が表示されていません");
+assert(html.includes('<h1 id="hero-title"><span>いつまでも</span><span>元気でいてほしい人へ</span></h1>'), "ファーストビュー見出しのHTMLが正しくありません");
+assert(!html.includes("data-campaign-"), "HTMLに動的な文言上書き用属性が残っています");
 assert(html.includes("9月17日中のご注文が目安です"), "配送締切の目安が表示されていません");
 assert(html.includes("北海道・東北・沖縄・離島"), "配送に時間がかかる地域の案内がありません");
 assert(!html.includes("【要確認：敬老の日到着分の注文締切】"), "古い配送締切の要確認表示が残っています");
-assert(css.includes("--color-primary: #85c877"), "アクセントカラーがCSS変数で定義されていません");
+assert(css.includes("--color-primary: #713f3d"), "ボルドーのアクセントカラーがCSS変数で定義されていません");
 assert(css.includes(":focus-visible"), "focus-visibleスタイルがありません");
 assert(css.includes("prefers-reduced-motion"), "reduced motion対応がありません");
 assert(mainJs.includes("ArrowRight") && mainJs.includes("ArrowLeft"), "タブのキーボード操作がありません");
+assert(!mainJs.includes("loadCampaignContent"), "JavaScriptによる表示文言の上書き処理が残っています");
+assert(!mainJs.includes('fetch("data/campaign.json"'), "表示用JavaScriptがcampaign.jsonを読み込んでいます");
 assert(trackingJs.includes("campaign.utm_campaign"), "キャンペーン設定からUTMを取得していません");
 assert(!trackingJs.includes('utm_campaign: "keirounohi_2026"'), "utm_campaignをJavaScriptへ固定しないでください");
 assert(trackingJs.includes('if (!url.searchParams.has("utm_content"))'), "流入時のutm_contentを保持する処理がありません");

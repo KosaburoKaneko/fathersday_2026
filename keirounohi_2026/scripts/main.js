@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const year = document.querySelector("[data-current-year]");
   if (year) year.textContent = new Date().getFullYear();
 
-  loadCampaignContent();
-
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", (event) => {
       const target = document.querySelector(anchor.getAttribute("href"));
@@ -73,45 +71,3 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", updateStickyCta);
   window.setInterval(updateStickyCta, 300);
 });
-
-async function loadCampaignContent() {
-  try {
-    const response = await fetch("data/campaign.json", { cache: "no-store" });
-    if (!response.ok) return;
-    const campaign = await response.json();
-
-    if (campaign.page_title) document.title = campaign.page_title;
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription && campaign.meta_description) {
-      metaDescription.setAttribute("content", campaign.meta_description);
-    }
-
-    const campaignLabel = document.querySelector("[data-campaign-label]");
-    if (campaignLabel && campaign.campaign_label) campaignLabel.textContent = campaign.campaign_label;
-
-    const heading = document.querySelector("[data-campaign-h1]");
-    if (heading && Array.isArray(campaign.h1_lines) && campaign.h1_lines.length) {
-      const lines = campaign.h1_lines.map((line) => {
-        const span = document.createElement("span");
-        span.textContent = line;
-        return span;
-      });
-      heading.replaceChildren(...lines);
-    } else if (heading && campaign.h1) {
-      heading.textContent = campaign.h1;
-    }
-
-    const mainCopy = document.querySelector("[data-campaign-main-copy]");
-    if (mainCopy && campaign.main_copy) mainCopy.textContent = campaign.main_copy;
-
-    const subCopy = document.querySelector("[data-campaign-sub-copy]");
-    if (subCopy && campaign.sub_copy) subCopy.textContent = campaign.sub_copy;
-
-    document.querySelectorAll("[data-campaign-cta]").forEach((cta) => {
-      if (campaign.cta_label) cta.textContent = campaign.cta_label;
-    });
-  } catch {
-    // Static file previews without fetch support can keep the HTML defaults.
-  }
-}

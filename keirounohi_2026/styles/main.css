@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #85c877;
-  --color-primary-dark: #477540;
-  --color-primary-soft: #f2f5ef;
+  --color-primary: #713f3d;
+  --color-primary-dark: #58302f;
+  --color-primary-soft: #f7f1f0;
   --ice: #f7f6f2;
   --ice-deep: #eeece6;
   --paper: #ffffff;
@@ -9,7 +9,7 @@
   --card: #ffffff;
   --navy: #272822;
   --teal: var(--color-primary);
-  --teal-dark: #477540;
+  --teal-dark: var(--color-primary-dark);
   --gold: #aa9564;
   --gold-soft: #f7f3e9;
   --ink: #373832;
@@ -792,6 +792,35 @@ h3 {
   padding-top: 6px;
 }
 
+.hero-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin: 16px auto 0;
+  color: #806c40;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.14em;
+}
+
+.hero-date::before,
+.hero-date::after {
+  width: 28px;
+  height: 1px;
+  background: var(--gold-line);
+  content: "";
+}
+
+.hero-date span {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic", system-ui, sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
 .hero h1,
 .section-head h2,
 .bottom-cta h2 {
@@ -903,19 +932,19 @@ h3 {
 }
 
 .button {
-  border-color: #6db260;
+  border-color: #633735;
   border-radius: 6px;
   background: var(--color-primary);
-  color: #18321d;
-  box-shadow: 0 10px 22px rgba(56, 83, 51, 0.14);
+  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(113, 63, 61, 0.2);
 }
 
 .button:hover {
-  background: #78bd69;
+  background: #653735;
 }
 
 .button:active {
-  background: #6fb361;
+  background: var(--color-primary-dark);
 }
 
 .quick-nav {
@@ -1102,7 +1131,7 @@ h3 {
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible {
-  outline: 3px solid #4f7b48;
+  outline: 3px solid #8b5350;
   outline-offset: 3px;
 }
 
