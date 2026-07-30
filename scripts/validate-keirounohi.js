@@ -84,6 +84,8 @@ assert(html.includes("9月17日中のご注文が目安です"), "配送締切�
 assert(html.includes("北海道・東北・沖縄・離島"), "配送に時間がかかる地域の案内がありません");
 assert(!html.includes("【要確認：敬老の日到着分の注文締切】"), "古い配送締切の要確認表示が残っています");
 assert(css.includes("--color-primary: #713f3d"), "ボルドーのアクセントカラーがCSS変数で定義されていません");
+assert(css.includes('url("../assets/images/hero-botanical-ornament.webp")'), "ファーストビューの植物線画がCSSに設定されていません");
+assert(await fileExists(path.join(campaignDir, "assets/images/hero-botanical-ornament.webp")), "植物線画の画像ファイルがありません");
 assert(css.includes(":focus-visible"), "focus-visibleスタイルがありません");
 assert(css.includes("prefers-reduced-motion"), "reduced motion対応がありません");
 assert(mainJs.includes("ArrowRight") && mainJs.includes("ArrowLeft"), "タブのキーボード操作がありません");
