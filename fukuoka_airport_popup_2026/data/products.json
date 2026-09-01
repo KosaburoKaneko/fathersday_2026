@@ -1,0 +1,30 @@
+{
+  "campaign": "fukuoka_airport_popup_2026",
+  "products": [
+    {
+      "id": "neo_yuzu_gosho",
+      "name": "ネオ柚子胡椒",
+      "label": "01 / ORIGINAL",
+      "localImagePath": "assets/images/product-original.jpg",
+      "description": "柚子胡椒に、にんにく・ごま油・ネギ油などを合わせた、ネオフクオカの定番調味料。",
+      "pairings": ["ごはん", "餃子", "ラーメン", "そうめん", "焼肉"]
+    },
+    {
+      "id": "spicy_neo_yuzu_gosho",
+      "name": "激辛ネオ柚子胡椒",
+      "label": "02 / EXTRA HOT",
+      "localImagePath": "assets/images/product-extra-hot.jpg",
+      "description": "ネオ柚子胡椒のおいしさをベースに、しっかりとした辛さを楽しめる激辛タイプ。",
+      "pairings": ["ラーメン", "餃子", "カレー", "焼肉", "ピザ"]
+    },
+    {
+      "id": "kakeru_motsunabe_shoyu",
+      "name": "ごはんにかけるもつ鍋 醤油味",
+      "label": "03 / MOTSUNABE",
+      "localImagePath": "assets/images/product-motsunabe.jpg",
+      "description": "牛や野菜の旨みと、ニンニクのコク。博多のもつ鍋をヒントに作った、ごはんのお供です。",
+      "pairings": ["白ごはん", "卵かけごはん", "冷奴"]
+    }
+  ]
+}
+

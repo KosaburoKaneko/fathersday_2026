@@ -1,0 +1,17 @@
+{
+  "campaign_name": "fukuoka_airport_popup_2026",
+  "campaign_label": "福岡空港 ポップアップ",
+  "utm_campaign": "fukuoka_airport_popup_2026",
+  "page_title": "福岡空港ポップアップ｜ネオフクオカ",
+  "meta_description": "福岡県うきは市発の食品ブランド、ネオフクオカが福岡空港 国内線旅客ターミナルビル2Fに期間限定出店。9月2日(水)〜9月30日(水)、9:00〜19:00。3商品の試食ができます。",
+  "h1": "福岡空港で見つける、いつものごはんがちょっと楽しくなる福岡土産。",
+  "event": {
+    "venue": "福岡空港 国内線旅客ターミナルビル 2F",
+    "start_date": "2026-09-02",
+    "end_date": "2026-09-30",
+    "display_date": "9月2日(水)〜9月30日(水)",
+    "hours": "9:00〜19:00",
+    "tasting_available": true
+  },
+  "primary_cta": { "label": "売場を見る", "target": "#access" }
+}
